@@ -4,10 +4,76 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Global Illumination - Raytracing</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>
+
+	<h1>Global Illumination Raytracer Assignment</h1>
+	<h2>Collaborators: Maximillian McMullen (mrm8391) and Tanner Atwater (tja2703)</h2>
+
+	<p>
+		This page serves as a testament to our work on a custom-built raytracer. 
+		The raytracer will evolve over time as we learn more about illumination
+		and graphics in a Global Illumination class, with the results being shown 
+		in biweekly "checkpoint" assignments.
+	</p>
+
+	<h3><u>Checkpoint 1 - Setting the Scene (1/25/19)</u></h3>
+	<p>Task: Reproduce the geometry of a scene, and determine the object locations and positions</p>
+	<p>Reference scene:</p>
+	<img src="img/WhittedRaytracerScene.PNG">
+
+	<p>Reproduced scene (rendered in Blender):</p>
+	<img src="img/GI_SceneScreencap.PNG" width=406px height=245px>
+
+	<table>
+		<caption>Object orientations</caption>
+		<thead>
+			<tr>
+				<th>Object</th>
+				<th>Position (X,Y,Z)</th>
+				<th>Rotation (Rx,Ry,Rz)</th>
+				<th>Scale (Sx,Sy,Sz)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Floor (scaled as cube)</td>
+				<td>(-0.2,0.3,0.0)</td>
+				<td>(0.0,0.0,0.0)</td>
+				<td>(5.5,1.73,0.1)</td>
+			</tr>
+			<tr>
+				<td>Smaller Sphere</td>
+				<td>(0.74,0.07,0.71)</td>
+				<td>(0.0,0.0,0.0)</td>
+				<td>(0.5,0.5,0.5)</td>
+			</tr>
+			<tr>
+				<td>Larger Sphere</td>
+				<td>(1.68,-0.6,0.9)</td>
+				<td>(0.0,0.0,0.0)</td>
+				<td>(1.0,1.0,1.0)</td>
+			</tr>
+			<tr>
+				<td>Camera</td>
+				<td>(5.14,-0.71,0.7)</td>
+				<td>(268,180,265)</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<td>Light Source</td>
+				<td>(5.11,-1.3,3.0)</td>
+				<td>N/A</td>
+				<td>N/A</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<br>
+	<br>
 	
 </body>
 </html>
