@@ -101,10 +101,20 @@
     <img src="img/checkpoint5.png">
 
 	<h4><u>Shadow Bugfix</u></h4>
-	<p>We fixed a shadowing bug which had prevented self-shadowing, and was causing incorrect specular highlights. Here is an updated image with a low reflection constant on the large sphere. 
+	<p>We fixed a shadowing bug which had prevented self-shadowing, and was causing incorrect specular highlights. Here is an updated image with a low reflection constant on the large sphere.</p>
 
 	<img src="img/shadowBugfix.png">
 
+	<h3><u>Checkpoint 6 - Refraction (sort of)</u></h3>
+    <p>Task: Add refractive material</p>
+    <p>After some refactor work, rays successfully transmit through objects and use the correct material of the medium a ray is going through. MAX_DEPTH for recursive illuminance calls
+	is changed to 3, so that the transmission can be seen.</p>
+    <p>Unfortunately, the refraction isn't fully polished yet. It appears to work, but is inverted. The refraction alongside the top of the sphere appears to be what should be refracting on the bottom. 
+	Likewise, the bottom of the sphere refracts to the scene background whereas it should be along the top. One other small issue is that refracting objects still do cast shadow as well.
+	The checkpoint otherwise works as expected.</p>
+
+    <img src="img/checkpoint6broken.png">
+	
 	<br>
 	<br>
 	<br>
