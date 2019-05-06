@@ -129,6 +129,20 @@
     <h4><u>Reinhard Scaling, Low to High Light Level</u></h4>
     <img src="img/ReinhartScalingLow.png"> <img src="img/ReinhartScalingMid.png"> <img src="img/ReinhartScalingHigh.png">
 
+    <h3><u>Advanced Extra - Adaptive Logarithmic Tone Scaling</u></h3>
+    <p>Task: Apply Adaptive Logarithmic Mapping to our scene, and compare results with basic Ward model.</p>
+    <p>With a lot of parenthesis, we followed the given formula for luminance at each pixel: </p>
+    <img src="img/logFormula.png">
+    <p>where Lw is the luminance at the current pixel, and Lwmax is the maximum luminance of any pixel in the scene, each divided by the log-average 
+    luminance of the scene. <i>b</i> was set to 0.85, as recommended in the paper, Adaptive Logarithmic Mapping For Displaying High Contrast Scenes (Drago, et. al. 2003, Eurographics). 
+    The scene luminance values are scaled by the resulting "display luminance" Ld.</p>
+    <h4><u>Adaptive Logarithmic Scaling, Low to High Light Level</u></h4>
+    <img src="img/LogScalingLow.png"> <img src="img/LogScalingMid.png"> <img src="img/LogScalingHigh.png">
+    <p>As you can see, the tones look bolder than Ward scaling. With adaptive logarithmic scaling, the background becomes dimmer as the scene becomes brighter. 
+    Ward scaling keeps the background consistent, and Reinhard scaling brightens the background as the scene becomes brighter. </p>
+
+    
+
 	<h3><u>Advanced Extra - Open Shading Language</u></h3>
 	<p>Task: Learn and experiment with Open Shading Language using Blender</p>
 	<p>Following <a href="https://www.youtube.com/watch?v=8CNyM_NdTDQ">the OSL tutorial</a> as instructed, we produced a volume shader that utilizes the Perlin noise function.</p>
